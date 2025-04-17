@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- Created with Cambalache 0.94.1 -->
+<interface>
+  <requires lib="gtk" version="4.12"/>
+  <template parent="GtkCenterBox">
+    <property name="hexpand">True</property>
+    <property name="margin-end">5</property>
+    <property name="margin-start">5</property>
+    <property name="start-widget">
+      <object class="GtkBox">
+        <child>
+          <object class="GtkImage" id="packge_icon">
+            <property name="icon-name">package</property>
+            <property name="icon-size">large</property>
+          </object>
+        </child>
+        <child type="start">
+          <object class="GtkBox">
+            <property name="baseline-position">bottom</property>
+            <property name="homogeneous">True</property>
+            <property name="orientation">vertical</property>
+            <property name="valign">center</property>
+            <child type="start">
+              <object class="GtkLabel" id="package_name">
+                <property name="halign">start</property>
+                <property name="label">Package Version Repo</property>
+              </object>
+            </child>
+            <child type="center">
+              <object class="GtkLabel" id="package_dest">
+                <property name="halign">start</property>
+                <property name="label">Description</property>
+              </object>
+            </child>
+          </object>
+        </child>
+      </object>
+    </property>
+    <property name="valign">center</property>
+    <child type="end">
+      <object class="GtkBox">
+        <property name="halign">center</property>
+        <property name="spacing">5</property>
+        <child>
+          <object class="GtkButton" id="info_button">
+            <child>
+              <object class="GtkImage">
+                <property name="icon-name">mesagebox_info</property>
+                <property name="icon-size">large</property>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="GtkButton" id="install_button">
+            <child>
+              <object class="GtkImage">
+                <property name="icon-name">dialog-apply</property>
+                <property name="icon-size">large</property>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="GtkButton" id="unistall_button">
+            <child>
+              <object class="GtkImage">
+                <property name="icon-name">cancel</property>
+                <property name="icon-size">large</property>
+              </object>
+            </child>
+          </object>
+        </child>
+      </object>
+    </child>
+  </template>
+</interface>

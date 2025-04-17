@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- Created with Cambalache 0.94.1 -->
+<interface>
+  <!-- interface-name pasimple.ui -->
+  <requires lib="gtk" version="4.12"/>
+  <object class="GtkApplicationWindow">
+    <property name="titlebar">
+      <object class="GtkHeaderBar" id="header">
+        <property name="title-widget">
+          <object class="GtkBox">
+            <property name="hexpand">True</property>
+            <property name="homogeneous">True</property>
+            <property name="orientation">vertical</property>
+            <property name="spacing">3</property>
+            <child>
+              <object class="GtkCenterBox">
+                <child type="center">
+                  <object class="GtkBox">
+                    <property name="spacing">5</property>
+                    <child>
+                      <object class="GtkImage">
+                        <property name="icon-name">software-center</property>
+                        <property name="icon-size">large</property>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkLabel">
+                        <property name="label">PaSimple Package Manager</property>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+              </object>
+            </child>
+            <child>
+              <object class="GtkSearchEntry" id="search_entry"/>
+            </child>
+          </object>
+        </property>
+        <child type="start">
+          <object class="GtkButton" id="filters_button">
+            <child>
+              <object class="GtkImage">
+                <property name="icon-name">kt-add-filters</property>
+                <property name="icon-size">large</property>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child type="end">
+          <object class="GtkButton" id="settings_button">
+            <child>
+              <object class="GtkImage">
+                <property name="icon-name">gnome-settings</property>
+                <property name="icon-size">large</property>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child type="end">
+          <object class="GtkButton" id="cancel_button">
+            <child>
+              <object class="GtkImage">
+                <property name="icon-name">gtk-cancel</property>
+                <property name="icon-size">large</property>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child type="end">
+          <object class="GtkButton" id="apply_button">
+            <child>
+              <object class="GtkImage">
+                <property name="icon-name">dialog-apply</property>
+                <property name="icon-size">large</property>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child type="end">
+          <object class="GtkButton" id="update_button">
+            <child>
+              <object class="GtkImage">
+                <property name="icon-name">system-software-update</property>
+                <property name="icon-size">large</property>
+              </object>
+            </child>
+          </object>
+        </child>
+      </object>
+    </property>
+    <child>
+      <object class="GtkScrolledWindow">
+        <property name="child">
+          <object class="GtkBox">
+            <property name="orientation">vertical</property>
+          </object>
+        </property>
+        <property name="hexpand">True</property>
+        <property name="vexpand">True</property>
+      </object>
+    </child>
+  </object>
+</interface>

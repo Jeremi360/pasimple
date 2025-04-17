@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- Created with Cambalache 0.94.1 -->
+<interface>
+  <requires lib="gtk" version="4.6"/>
+  <template parent="GtkDialog">
+    <property name="child">
+      <object class="GtkScrolledWindow">
+        <property name="hexpand">True</property>
+        <property name="margin-end">5</property>
+        <property name="margin-start">5</property>
+        <property name="sensitive">False</property>
+        <property name="vexpand">True</property>
+        <child>
+          <object class="GtkLabel">
+            <property name="halign">start</property>
+            <property name="hexpand">True</property>
+            <property name="label">Package Info</property>
+            <property name="valign">start</property>
+            <property name="vexpand">True</property>
+          </object>
+        </child>
+      </object>
+    </property>
+    <property name="default-height">600</property>
+    <property name="default-width">600</property>
+    <property name="title">Package Name</property>
+  </template>
+</interface>

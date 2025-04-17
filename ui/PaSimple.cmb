@@ -3,8 +3,8 @@
 <cambalache-project version="0.94.0" target_tk="gtk-4.0">
   <ui>
 	(1,None,"pasimple.ui","pasimple.ui",None,None,None,None,None,None,None),
-	(2,None,None,"PackageBox",None,None,None,None,None,None,None),
-	(3,None,None,"Package_Info",None,None,None,None,None,None,None)
+	(2,1,None,"PackageBox.ui",None,None,None,None,None,None,None),
+	(3,4,None,"PackageInfo.ui",None,None,None,None,None,None,None)
   </ui>
   <object>
 	(1,1,"GtkApplicationWindow",None,None,None,None,None,0,None,None),
@@ -59,15 +59,15 @@
 	(1,9,"GtkBox","spacing","5",None,None,None,None,None,None,None,None,None),
 	(1,10,"GtkImage","icon-name","software-center",None,None,None,None,None,None,None,None,None),
 	(1,10,"GtkImage","icon-size","large",None,None,None,None,None,None,None,None,None),
-	(1,12,"GtkImage","icon-name","software-update-symbolic",None,None,None,None,None,None,None,None,None),
+	(1,12,"GtkImage","icon-name","system-software-update",None,None,None,None,None,None,None,None,None),
 	(1,12,"GtkImage","icon-size","large",None,None,None,None,None,None,None,None,None),
 	(1,14,"GtkImage","icon-name","dialog-apply",None,None,None,None,None,None,None,None,None),
 	(1,14,"GtkImage","icon-size","large",0,None,None,None,None,None,None,None,None),
-	(1,16,"GtkImage","icon-name","cancel",0,None,None,None,None,None,None,None,None),
+	(1,16,"GtkImage","icon-name","gtk-cancel",0,None,None,None,None,None,None,None,None),
 	(1,16,"GtkImage","icon-size","large",0,None,None,None,None,None,None,None,None),
-	(1,18,"GtkImage","icon-name","settings",None,None,None,None,None,None,None,None,None),
+	(1,18,"GtkImage","icon-name","gnome-settings",None,None,None,None,None,None,None,None,None),
 	(1,18,"GtkImage","icon-size","large",0,None,None,None,None,None,None,None,None),
-	(1,20,"GtkImage","icon-name","dialog-filters",None,None,None,None,None,None,None,None,None),
+	(1,20,"GtkImage","icon-name","kt-add-filters",None,None,None,None,None,None,None,None,None),
 	(1,20,"GtkImage","icon-size","large",0,None,None,None,None,None,None,None,None),
 	(2,1,"GtkCenterBox","start-widget","2",None,None,None,None,2,None,None,None,None),
 	(2,1,"GtkWidget","hexpand","True",None,None,None,None,None,None,None,None,None),

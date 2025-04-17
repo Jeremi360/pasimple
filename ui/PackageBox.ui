@@ -2,7 +2,7 @@
 <!-- Created with Cambalache 0.94.1 -->
 <interface>
   <requires lib="gtk" version="4.12"/>
-  <template parent="GtkCenterBox">
+  <object class="GtkCenterBox">
     <property name="hexpand">True</property>
     <property name="margin-end">5</property>
     <property name="margin-start">5</property>
@@ -45,7 +45,7 @@
           <object class="GtkButton" id="info_button">
             <child>
               <object class="GtkImage">
-                <property name="icon-name">mesagebox_info</property>
+                <property name="icon-name">dialog-info</property>
                 <property name="icon-size">large</property>
               </object>
             </child>
@@ -65,7 +65,7 @@
           <object class="GtkButton" id="unistall_button">
             <child>
               <object class="GtkImage">
-                <property name="icon-name">cancel</property>
+                <property name="icon-name">gtk-remove</property>
                 <property name="icon-size">large</property>
               </object>
             </child>
@@ -73,5 +73,5 @@
         </child>
       </object>
     </child>
-  </template>
+  </object>
 </interface>

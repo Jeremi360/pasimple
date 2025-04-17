@@ -3,7 +3,7 @@
 <interface>
   <!-- interface-name pasimple.ui -->
   <requires lib="gtk" version="4.12"/>
-  <object class="GtkApplicationWindow">
+  <object class="GtkApplicationWindow" id="main_window">
     <property name="titlebar">
       <object class="GtkHeaderBar" id="header">
         <property name="title-widget">

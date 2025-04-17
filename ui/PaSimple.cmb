@@ -3,11 +3,11 @@
 <cambalache-project version="0.94.0" target_tk="gtk-4.0">
   <ui>
 	(1,None,"pasimple.ui","pasimple.ui",None,None,None,None,None,None,None),
-	(2,1,None,"PackageBox.ui",None,None,None,None,None,None,None),
-	(3,4,None,"PackageInfo.ui",None,None,None,None,None,None,None)
+	(2,None,None,"PackageBox.ui",None,None,None,None,None,None,None),
+	(3,None,None,"PackageInfo.ui",None,None,None,None,None,None,None)
   </ui>
   <object>
-	(1,1,"GtkApplicationWindow",None,None,None,None,None,0,None,None),
+	(1,1,"GtkApplicationWindow","main_window",None,None,None,None,0,None,None),
 	(1,2,"GtkHeaderBar","header",1,None,None,None,0,None,None),
 	(1,4,"GtkScrolledWindow",None,1,None,None,None,1,None,None),
 	(1,5,"GtkBox",None,4,None,None,None,0,None,None),
@@ -20,13 +20,14 @@
 	(1,12,"GtkImage",None,11,None,None,None,0,None,None),
 	(1,13,"GtkButton","apply_button",2,None,"end",None,4,None,None),
 	(1,14,"GtkImage",None,13,None,None,None,0,None,None),
-	(1,15,"GtkButton","cancel_button",2,None,"end",None,3,None,None),
+	(1,15,"GtkButton","cancel_button",22,None,"end",None,1,None,None),
 	(1,16,"GtkImage",None,15,None,None,None,0,None,None),
-	(1,17,"GtkButton","settings_button",2,None,"end",None,2,None,None),
+	(1,17,"GtkButton","settings_button",22,None,"end",None,0,None,None),
 	(1,18,"GtkImage",None,17,None,None,None,0,None,None),
 	(1,19,"GtkButton","filters_button",2,None,"start",None,0,None,None),
 	(1,20,"GtkImage",None,19,None,None,None,0,None,None),
 	(1,21,"GtkCenterBox",None,6,None,None,None,0,None,None),
+	(1,22,"GtkBox",None,2,None,"end",None,2,None,None),
 	(2,1,"GtkCenterBox",None,None,None,None,None,0,None,None),
 	(2,2,"GtkBox",None,1,None,None,None,0,None,None),
 	(2,3,"GtkImage","packge_icon",2,None,None,None,0,None,None),
@@ -45,6 +46,8 @@
 	(3,4,"GtkDialog",None,None,None,None,None,1,None,None)
   </object>
   <object_property>
+	(1,1,"GtkWindow","default-height","800",None,None,None,None,None,None,None,None,None),
+	(1,1,"GtkWindow","default-width","600",None,None,None,None,None,None,None,None,None),
 	(1,1,"GtkWindow","titlebar","2",None,None,None,None,2,None,None,None,None),
 	(1,2,"GtkHeaderBar","title-widget","6",None,None,None,None,6,None,None,None,None),
 	(1,4,"GtkScrolledWindow","child","5",None,None,None,None,5,None,None,None,None),
@@ -56,6 +59,7 @@
 	(1,6,"GtkOrientable","orientation","vertical",None,None,None,None,None,None,None,None,None),
 	(1,6,"GtkWidget","hexpand","True",None,None,None,None,None,None,None,None,None),
 	(1,7,"GtkLabel","label","PaSimple Package Manager",None,None,None,None,None,None,None,None,None),
+	(1,8,"GtkSearchEntry","input-purpose","name",None,None,None,None,None,None,None,None,None),
 	(1,9,"GtkBox","spacing","5",None,None,None,None,None,None,None,None,None),
 	(1,10,"GtkImage","icon-name","software-center",None,None,None,None,None,None,None,None,None),
 	(1,10,"GtkImage","icon-size","large",None,None,None,None,None,None,None,None,None),
@@ -86,11 +90,11 @@
 	(2,7,"GtkWidget","valign","center",None,None,None,None,None,None,None,None,None),
 	(2,8,"GtkBox","spacing","5",None,None,None,None,None,None,None,None,None),
 	(2,8,"GtkWidget","halign","center",None,None,None,None,None,None,None,None,None),
-	(2,10,"GtkImage","icon-name","mesagebox_info",None,None,None,None,None,None,None,None,None),
+	(2,10,"GtkImage","icon-name","dialog-info",None,None,None,None,None,None,None,None,None),
 	(2,10,"GtkImage","icon-size","large",None,None,None,None,None,None,None,None,None),
 	(2,12,"GtkImage","icon-name","dialog-apply",None,None,None,None,None,None,None,None,None),
 	(2,12,"GtkImage","icon-size","large",0,None,None,None,None,None,None,None,None),
-	(2,14,"GtkImage","icon-name","cancel",None,None,None,None,None,None,None,None,None),
+	(2,14,"GtkImage","icon-name","gtk-remove",None,None,None,None,None,None,None,None,None),
 	(2,14,"GtkImage","icon-size","large",0,None,None,None,None,None,None,None,None),
 	(3,2,"GtkWidget","hexpand","True",None,None,None,None,None,None,None,None,None),
 	(3,2,"GtkWidget","margin-end","5",None,None,None,None,None,None,None,None,None),
